@@ -57,10 +57,10 @@
                 border: none;
               }
               #banner{
-                max-width: 360px;
+                max-width: 400px;
               }
               .rounded{
-              max-width: 360px;
+              max-width: 400px;
             }
               header{
                 margin: 7px;
@@ -72,7 +72,7 @@
                 grid-template-columns: 12fr;
               }
               #about{
-                margin: 10px;
+                margin-top: 10px;
                 background-color: lightcyan;
                 color: black;
                 font-family: Arial;
@@ -87,6 +87,17 @@
               max-width: 400px;
               padding: 6px;
               border-radius: 6px;
+             }
+             #Works img{
+              max-width: 380px;
+              background-size: cover;
+              height: 300px;
+              margin-top: 10px;
+             }
+             #Works{
+              border: 1px solid white;
+              margin: 20px;
+              max-width: 400px;
              }
             }
             @media screen and (orientation:landscape) {
@@ -121,7 +132,7 @@
                 max-width: 400px;
               }
               #about textarea{
-                max-width: 400px;
+                max-width: 300px;
               }
               #about hr{
                 display: none;
@@ -137,6 +148,10 @@
                 font-family: Arial;
                 font-size: 20px;
               }
+              /* #Works{
+                display: flex;
+                flex-direction: column;
+              } */
             }
           </style>
          
@@ -168,7 +183,7 @@
         </div>
        
           <div>
-             <img src="./images/download.jpeg" class="rounded" alt="#" height="300px">       
+             <img src="./images/download.jpeg" class="rounded" alt="#" height="350px">       
           </div>
 
         <div id="about">
@@ -198,7 +213,7 @@
              <button class="btn btn-close btn-light" data-bs-dismiss="offcanvas"></button>
            </div>
            <div class="offcanvas-body">
-            <nav class="fs-6 d-flex justify-content-between bg-primary p-2 rounded">
+            <nav class="fs-5 d-flex justify-content-between bg-primary p-2 rounded">
               <a href="#home" class="p-2 text-light">Home</a>
               <a href="#about" class="p-2 text-light">About</a> 
               <a href="#" class="p-2 text-light">Works</a>
@@ -214,21 +229,26 @@
           <span>Bootstrap</span>
           <span class=" p-2">Javascript</span>
           <span class=" p-2">React</span>
+          <span class=" p-2">JQuery</span>
           <span class=" p-2">Node.js</span>
           <span class=" p-2">Express</span>
-          <span class=" p-2">Momgodb</span>
+          <span class=" p-2">Mongodb</span>
           <span class=" p-2">MySQL</span>
        </div> 
        <div class="float-end">
         <img src="./images/OIP.jpeg" id="banner" alt="#"> 
        </div>
-
-       <div id="contact">
-        <h2 class="text-primary">Contact</h2>
-        <div class="bi bi-envelope-at text-light"> <span class="text-warning">Email:</span> prashantkumar08102002@gmail.com</div>
-        <div class="bi bi-telephone text-light"> <span class="text-warning">Phone:</span> +91 8877596632</div>
-       </div>
-
+        <div id="Works" class="bg-info  mt-4 p-4 rounded">
+          <h3 class="ms-5 text-primary text-uppercase text-decoration-underline">Mini Projects (Works)</h3>
+          <span class="text-light fs-5  text-center">Bubble Game,</span>
+         <span class="text-light fs-5 text-center">Money Management,</span>
+         <span class="text-light fs-5 text-center">ToDO List App</span>
+        </div>
+        <div id="contact">
+          <h2 class="text-primary">Contact</h2>
+          <div class="bi bi-envelope-at text-light"> <span class="text-warning">Email:</span> prashantkumar08102002@gmail.com</div>
+          <div class="bi bi-telephone text-light"> <span class="text-warning">Phone:</span> +91 8877596632</div>
+         </div>
      </section>
 </body>
 </html>
