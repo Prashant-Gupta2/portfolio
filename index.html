@@ -14,10 +14,10 @@
              background-size: cover;
              overflow: auto;
             }  
-            #col{
-             margin-top: 230px;
-             margin-left: 50px;
-            }  
+            #col
+            {
+              margin-top: 30px;
+            }
             nav a:hover{
              color: yellowgreen;
             }  
@@ -26,89 +26,209 @@
             }  
             .box{
              margin-top: 250px; 
-             margin-left: 50px;      
+             /* margin-left: 50px;       */
              display: grid;
              grid-template-columns:4fr 8fr;
             }
             #skills{
-             width: 300px;
-             margin: 0 auto;
+             max-width: 300px;
+             /* margin: 0 auto; */
              margin-top: 50px;
             }
+           
             #contact{
-             margin-left: 50px;
+             /* margin-left: 50px; */
              background-color: cornflowerblue;
              height: 180px;
-             width: 500px;
+             max-width: 500px;
              box-sizing: border-box;
              padding: 10px;
              box-shadow: 2px 2px 2px gray;
              border-radius: 10px;
              margin-top: 50px;
             }
-            @media only screen and (max-device-width: 600px)
-             { 
-               nav a{
-               width: 100%;
-               
+        
+            
+            @media screen and (orientation:portrait){
+              nav{
+                display: none;
+              }
+              .bi-justify{
+                border: none;
+              }
+              #banner{
+                max-width: 320px;
+              }
+              .rounded{
+              max-width: 320px;
+            }
+              header{
+                margin: 7px;
+                display: flex;
+                justify-content: space-between;
               }
               section{
-               width: 400px;
+                display: grid;
+                grid-template-columns: 12fr;
               }
+              #about{
+                margin: 10px;
+                background-color: lightcyan;
+                color: black;
+                font-family: Arial;
+                padding: 10px;
+                border-radius: 4px;
+                max-width: 320px;
+                margin-top: 20px;
+              }
+             #skills{
+              background-color:ghostwhite;
+              color: black;
+              max-width: 320px;
+              padding: 6px;
+              border-radius: 6px;
              }
+            }
+            @media screen and (orientation:landscape) {
+              .bi-justify{
+                display: none;
+              }
+              header{
+                margin: 7px;
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+              }
+              nav a{
+                color: white;
+              }
+              #link{
+               width: 300px;  
+              }
+              #about{
+                margin: 20px;
+                /* display: flex;
+                justify-content: space-around; */
+                color: white;
+                border: 2px solid azure;
+                padding: 10px;
+                max-width: 400px;
+                
+              }
+              #about form input{
+                max-width: 300px;
+              }
+              #about p{
+                max-width: 400px;
+              }
+              #about textarea{
+                max-width: 300px;
+              }
+              #about hr{
+                display: none;
+              }
+              #skills{
+               margin: 0 auto;
+               background-color: darkslateblue;
+               padding: 20px;
+               border-radius: 3px;
+              }
+              #skills span{
+                color: white;
+                font-family: Arial;
+                font-size: 20px;
+              }
+            }
           </style>
+         
 </head>
 <body class="container-fluid">
-     <header class="d-flex justify-content-around p-2" id="home">
-       <h3 class="text-danger">DEVELOPMENT</h3>
+     <header id="home">
+       <h3 class="text-primary">DEVELOPMENT</h3>
        <nav class="fs-5">
         <a href="#home" class="p-2">Home</a>
         <a href="#about" class="p-2">About</a> 
-        <a href="#" class="p-2">Works</a> 
+        <a href="#" class="p-2">Works</a>
+        <a href="#skills" class="p-2">Skills</a> 
         <a href="#contact" class="p-2 text-danger">Contact</a>   
-       </nav> 
+       </nav>
+       <div>
+        <button data-bs-target="#offcanvas" data-bs-toggle="offcanvas" class="bi bi-justify fs-5"></button>
+       </div> 
      </header>
+
      <section>
-       <div class="row">
-        <div class="col text-light" id="col">
+        <div class="text-light" id="col">
           <h1 class="text-warning">Web Developer</h1>
           <h3>Prashant Kumar</h3>
-          <div class="text-light my-4">
-          <span class="bi bi-linkedin p-2 fs-5"></span>
-          <span class="bi bi-instagram p-2 f-5"></span>
-          <span class="bi bi-github p-2 fs-5"></span>
+          <div class="text-light bg-danger rounded p-2 my-4" id="link">
+          <a href="linkedin.com/in/prashant-kumar-93532a238 " class="bi bi-linkedin text-light p-2 fs-5"></a>
+          <a class="bi bi-instagram p-2 text-light f-5"></a>
+          <a class="bi bi-github p-2 text-light fs-5"></a>
           </div>  
         </div>
-       </div> 
-       <div class="box">
+       
           <div>
              <img src="./images/download.jpeg" class="rounded" alt="#" height="300px">       
           </div>
-        <div class="ms-5" id="about">
-          <h3 class="text-warning">About Me</h3>
-          <p class="text-light fs-5">
+
+        <div id="about">
+          <div>
+            <h3 class="text-primary">About Me</h3>
+          <p class="fs-5">
            Hii, I am Prashant kumar Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi beatae temporibus repellendus laudantium nihil, facilis molestiae quae iure, fuga accusamus vel id neque, magnam impedit aliquam. Quia, libero facilis?         
           </p>
+          <hr>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="31d35a21-701d-4807-b88c-66ffcd87f412">
+            <dl>
+              <dt>Name:</dt>
+              <dd><input type="text" placeholder="Name" name="name" class="form-control" required /></dd>
+              <dt>Email:</dt>
+              <dd><input type="text" placeholder="Email" name="email" class="form-control" required/></dd>
+              <dt>Address:</dt>
+              <dd><textarea aria-setsize="40" class="form-control" name="Address" required></textarea></dd>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </dl>
+          </form>
         </div>
-       </div> 
+         <div class="offcanvas offcanvas-top bg-dark text-light" id="offcanvas">
+           <div class="offcanvas-header">
+             <h3 class="text-center bg-danger p-2 rounded">PORTFOLIO</h3>
+             <button class="btn btn-close btn-light" data-bs-dismiss="offcanvas"></button>
+           </div>
+           <div class="offcanvas-body">
+            <nav class="fs-6 d-flex justify-content-between bg-primary p-2 rounded">
+              <a href="#home" class="p-2 text-light">Home</a>
+              <a href="#about" class="p-2 text-light">About</a> 
+              <a href="#" class="p-2 text-light">Works</a>
+              <a href="#skills" class="p-2 text-light">Skills</a> 
+              <a href="#contact" class="p-2 text-light">Contact</a>   
+             </nav>
+           </div>
+         </div>
+   
        <div id="skills">
           <h2 class="text-warning">Professional Skills</h2>
-          <span class="text-light p-2">HTML/CSS</span>
-          <span class="text-light p-2">Javascript</span>
-          <span class="text-light p-2">React</span>
-          <span class="text-light p-2">Node.js</span>
-          <span class="text-light p-2">Express</span>
-          <span class="text-light p-2">Momgodb</span>
-          <span class="text-light p-2">MySQL</span>
-          <div>
-             <img src="./images/OIP.jpeg" alt="#"> 
-          </div>
+          <span class=" p-2">HTML / CSS</span>
+          <span>Bootstrap</span>
+          <span class=" p-2">Javascript</span>
+          <span class=" p-2">React</span>
+          <span class=" p-2">Node.js</span>
+          <span class=" p-2">Express</span>
+          <span class=" p-2">Momgodb</span>
+          <span class=" p-2">MySQL</span>
        </div> 
+       <div class="float-end">
+        <img src="./images/OIP.jpeg" id="banner" alt="#"> 
+       </div>
+
        <div id="contact">
         <h2 class="text-primary">Contact</h2>
         <div class="bi bi-envelope-at text-light"> <span class="text-warning">Email:</span> prashantkumar08102002@gmail.com</div>
         <div class="bi bi-telephone text-light"> <span class="text-warning">Phone:</span> +91 8877596632</div>
        </div>
+
      </section>
 </body>
 </html>
