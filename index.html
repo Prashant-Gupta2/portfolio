@@ -40,6 +40,8 @@
                 margin: 7px;
                 display: flex;
                 justify-content: space-between;
+                position: sticky;
+                top: 7px;
               }
               section{
                 display: grid;
@@ -119,11 +121,7 @@
                 position: sticky;
                 top: 5px;
               }
-              #showSkills{
-                position: sticky;
-                top: 80px;
-                margin: 10px 0px;
-              }
+             
               .bi-justify{
                 display: none;
               }
@@ -196,6 +194,9 @@
                 border-radius: 5px;
                 box-sizing: 2px 2px 2px 2px gray;
               }
+              .resume-sec{
+                display: flex;
+              }
               #journey{
                 background-color: darkslategrey;
                 height: 500px;
@@ -203,6 +204,7 @@
                 border-radius: 5px;
                 
               }
+           
               #banner{
                 display: flex;
               }
@@ -225,12 +227,14 @@
                 width: 500px;
                 padding: 10px
               }
+            
             }
            marquee img{
             height: 100px;
             width: 150px;
             background: transparent;
             border-radius: 10px;
+            mix-blend-mode:color-burn;
            }
           </style>
          
@@ -252,15 +256,15 @@
      <section>
       <div id="showSkills">
         <marquee scrollamount="15" behavior="scroll">
-          <img src="./images/html.jpeg" alt="#">
+          <img src="./images/html.webp" alt="#">
           <img src="./images/css.png" alt="#">
           <img src="./images/bootstrap.png" alt="#">
-          <img src="./images/js.jpeg" alt="#">
-          <img src="./images/react.jpeg" alt="#">
-          <img src="./images/jquery.jpeg" alt="#">
+          <img src="./images/js.webp" alt="#">
+          <img src="./images/react.png" alt="#">
+          <img src="./images/jquery.png" alt="#">
           <img src="./images/node.png" alt="#">
-          <img src="./images/express.jpg" alt="#">
-          <img src="./images/mongodb.jpeg" alt="#">
+          <img src="./images/express.webp" alt="#">
+          <img src="./images/mongo.png" alt="#">
           <img src="./images/mysql.png" alt="#">
         </marquee>
       </div>
@@ -293,20 +297,27 @@
           <hr>
           </div>
         </div>
-        <form action="https://api.web3forms.com/submit" method="post">
-          <h3 class="text-center p-2 bg-danger text-dark rounded my-2">Contact Us</h3>
-
-          <input type="hidden" name="access_key" value="31d35a21-701d-4807-b88c-66ffcd87f412">
-          <dl>
-            <dt>Name:</dt>
-            <dd><input type="text" placeholder="Name" name="name" class="form-control" required /></dd>
-            <dt>Email:</dt>
-            <dd><input type="text" placeholder="Email" name="email" class="form-control" required/></dd>
-            <dt>Address:</dt>
-            <dd><textarea aria-setsize="40" class="form-control" name="Address" required></textarea></dd>
-            <button class="btn btn-primary" type="submit">Submit</button>
-          </dl>
-        </form>
+        <div class="resume-sec">
+          <form action="https://api.web3forms.com/submit" method="post">
+            <h3 class="text-center p-2 bg-danger text-dark rounded my-2">Contact Us</h3>
+  
+            <input type="hidden" name="access_key" value="31d35a21-701d-4807-b88c-66ffcd87f412">
+            <dl>
+              <dt>Name:</dt>
+              <dd><input type="text" placeholder="Name" name="name" class="form-control" required /></dd>
+              <dt>Email:</dt>
+              <dd><input type="text" placeholder="Email" name="email" class="form-control" required/></dd>
+              <dt>Messages:</dt>
+              <dd><textarea aria-setsize="40" class="form-control" name="Address" required></textarea></dd>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </dl>
+          </form>
+          <div class="resume">
+           <h2>Download My Resume</h2>
+           <a href="./resume/resumeNew.pdf" download="resumeNew.pdf"><img src="./images/resume.jpg" width="200px" height="80px" style="mix-blend-mode: color-burn;"></a>
+          </div>
+        </div>
+        
         <div id="journey">
           <h3 class="text-center ">My Journey</h3>
           <div class="eaducation">
