@@ -115,7 +115,7 @@
             }
             @media screen and (orientation:landscape) {
               #home{
-                background-color: cornflowerblue;
+                background-color: rgb(35, 33, 33);
                 padding: 5px;
                 border-radius: 3px;
                 position: sticky;
@@ -230,8 +230,8 @@
             
             }
            marquee img{
-            height: 100px;
-            width: 150px;
+            height: 80px;
+            width: 100px;
             background: transparent;
             border-radius: 10px;
             mix-blend-mode:color-burn;
@@ -342,19 +342,23 @@
             </div>
           </div>
         </div>
-         <div class="offcanvas offcanvas-top bg-dark text-light" id="offcanvas">
+         <div class="offcanvas offcanvas-end w-75" id="offcanvas" style="background-color: #9b5d6b;">
            <div class="offcanvas-header">
-             <h3 class="text-center bg-danger p-2 rounded">PORTFOLIO</h3>
-             <button class="btn btn-close btn-light" data-bs-dismiss="offcanvas"></button>
+             <h3 class="text-light bg-danger p-2 rounded">PORFILE</h3>
+             <button class="btn btn-close btn-dark" data-bs-dismiss="offcanvas"></button>
            </div>
            <div class="offcanvas-body">
-            <nav class="fs-5 d-flex justify-content-between bg-primary p-2 rounded">
+            <nav class="fs-5 d-flex justify-content-between bg-dark p-2 rounded flex-column">
               <a href="#home" class="p-2 text-light">Home</a>
               <a href="#about" class="p-2 text-light">About</a> 
               <a href="#" class="p-2 text-light">Works</a>
               <a href="#skills" class="p-2 text-light">Skills</a> 
               <a href="#contact" class="p-2 text-light">Contact</a>   
              </nav>
+             <div class="my-4 text-center">
+              <h2 class="bg-secondary text-white p-2 w-100">Resume Download</h2>
+              <a href="./resume/resumeNew.pdf" download="resumeNew.pdf"><img src="./images/resume.jpg" width="200px" height="80px" style="mix-blend-mode: color-burn;"></a>
+             </div>
            </div>
          </div>
          <h2 class="text-dark text-center">Professional Skills</h2>
