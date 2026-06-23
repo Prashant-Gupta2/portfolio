@@ -1,403 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-          <style>
-           
-            body{
-             background:linear-gradient(#9796f0, #fbc7d4);
-             
-             background-size: cover;
-            }  
-            @media screen and (orientation:portrait){
-              nav{
-                display: none;
-              }
-              .bi-justify{
-                border: none;
-              }
-              marquee img{
-                height: 80px;
-                width: 120px;
-                border-radius: 6px;
-              }
-              #banner{
-                max-width: 400px;
-              }
-              nav a{
-                font-family: Arial;
-                text-decoration: none;
-              }
-              .rounded{
-              max-width: 400px;
-            }
-              header{
-                margin: 7px;
-                display: flex;
-                justify-content: space-between;
-                position: sticky;
-                top: 7px;
-              }
-              section{
-                display: grid;
-                grid-template-columns: 12fr;
-              }
-              #about{
-                margin-top: 10px;
-                background-color: lightcyan;
-                color: black;
-                font-family: Arial;
-                padding: 10px;
-                border-radius: 4px;
-                max-width: 400px;
-                margin-top: 20px;
-              }
-              #banner img{
-                width: 100%;
-              }
-              #contact{
-                background-color:darkslategrey;
-                height: 200px;
-                margin-top: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-radius: 5px;
-                box-sizing: 2px 2px 2px 2px gray;
-              }
-              #skills{
-                display: grid;
-               grid-template-columns: 6fr 6fr;
-               background-color: darkslateblue;
-               padding: 20px;
-               border-radius: 3px;
-               height: 350px;
-              }
-              #skills span{
-                color:black;
-                font-family: Arial;
-                font-size: 24px;
-                margin: 10px;
-                font-weight: bold;
-              }
-              .right{
-                border-left: 3px solid gray;
-                margin: 0 10px;
-                padding-left: 10px;
-              }
-
-              #journey{
-                background-color: darkslategrey;
-                height: 85vh;
-                width: 100%;
-                border-radius: 5px;
-                
-              }
-              .eaducation{
-                border: 2px solid black;
-                margin-top: 10px;
-                 border-radius: 5px;
-              }
-              #Works{
-               background-color: #9796f0; 
-               height: 200px;
-               padding-top: 20px;
-               padding-bottom: 10px;
-               text-align: center;
-               box-sizing: 3px 3px 3px 3px black;
-              }
-            }
-            @media screen and (orientation:landscape) {
-              #home{
-                background-color: rgb(35, 33, 33);
-                padding: 5px;
-                border-radius: 3px;
-                position: sticky;
-                top: 5px;
-              }
-             
-              .bi-justify{
-                display: none;
-              }
-              nav a{
-                font-family: Arial;
-                text-decoration: none;
-              }
-              header{
-                margin: 10px;
-                display: grid;
-                grid-template-columns: 6fr 6fr;
-                justify-content: space-between;
-               
-              }
-              nav a{
-                color: white;
-              }
-              nav a:hover{
-                color: brown;
-              }
-              #link{
-               width: 400px;  
-              }
-              #about{
-                display: flex;
-                margin: 20px;
-                font-family: Arial;
-                padding: 10px;
-                max-width: 100%;
-               
-              }
-              
-              #skills{
-               display: grid;
-               grid-template-columns: 6fr 6fr;
-               background-color: darkslateblue;
-               padding: 20px;
-               border-radius: 3px;
-               height: 350px;
-               
-              }
-              #skills span{
-                color:black;
-                font-family: Arial;
-                font-size: 24px;
-                margin: 10px;
-                font-weight: bold;
-              }
-              .right{
-                border-left: 3px solid gray;
-                margin: 0 10px;
-                padding-left: 10px;
-              }
-              #Works{
-               background-color: #9796f0; 
-               height: 200px;
-               padding-top: 20px;
-               padding-bottom: 10px;
-               text-align: center;
-               box-sizing: 3px 3px 3px 3px black;
-              }
-              #contact{
-                background-color:darkslategrey;
-                height: 200px;
-                margin-top: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-radius: 5px;
-                box-sizing: 2px 2px 2px 2px gray;
-              }
-              .resume-sec{
-                display: flex;
-              }
-              #journey{
-                background-color: darkslategrey;
-                height: 500px;
-                width: 100%;
-                border-radius: 5px;
-                
-              }
-           
-              #banner{
-                display: flex;
-              }
-              #banner img{
-                width: 100%;
-              }
-              .eaducation{
-                border: 2px solid black;
-                display: flex;
-                flex-direction:row;
-                width: 50%;
-                margin: 10px auto;
-                color: white;
-                 padding: 5px;
-                 border-radius: 5px;
-              }
-              form{
-                border: 2px solid lightblue;
-                margin: 20px auto;
-                width: 500px;
-                padding: 10px
-              }
-            
-            }
-           marquee img{
-            height: 80px;
-            width: 100px;
-            background: transparent;
-            border-radius: 10px;
-            mix-blend-mode:color-burn;
-           }
-          </style>
-         
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+  <title>Prashant Kumar · Web Developer</title>
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(145deg, #9796f0 0%, #fbc7d4 100%);
+      min-height: 100vh;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      padding: 0.5rem 0.5rem 1rem;
+    }
+    /* smooth scroll & sticky */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* glassmorphism header */
+    .glass-header {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px) saturate(180%);
+      -webkit-backdrop-filter: blur(12px) saturate(180%);
+      border-radius: 40px;
+      padding: 0.6rem 1.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #0b0c3a, #3f3d9e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .nav-links a {
+      color: #1e1e3a;
+      font-weight: 500;
+      margin: 0 0.6rem;
+      text-decoration: none;
+      padding: 0.3rem 0.8rem;
+      border-radius: 30px;
+      transition: 0.25s ease;
+      background: transparent;
+      font-size: 1rem;
+    }
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.5);
+      color: #0b0c3a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .nav-links a.text-danger {
+      background: rgba(220, 53, 69, 0.15);
+      color: #b02a37;
+    }
+    .hamburger-btn {
+      background: rgba(255,255,255,0.3);
+      border: none;
+      border-radius: 40px;
+      padding: 0.3rem 1rem;
+      font-size: 1.7rem;
+      line-height: 1;
+      backdrop-filter: blur(4px);
+      transition: 0.2s;
+      color: #1e1e3a;
+      display: none;
+    }
+    .hamburger-btn:hover {
+      background: rgba(255,255,255,0.6);
+    }
+    /* sections common */
+    .section-card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 32px;
+      padding: 1.8rem 1.8rem;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 12px 40px -12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+    .section-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 48px -16px rgba(0,0,0,0.2);
+    }
+    .profile-img {
+      border-radius: 28px;
+      object-fit: cover;
+      width: 100%;
+      max-height: 300px;
+      box-shadow: 0 12px 30px -8px rgba(0,0,0,0.2);
+      transition: 0.4s;
+    }
+    .profile-img:hover {
+      transform: scale(1.02);
+    }
+    .marquee-track {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      border-radius: 60px;
+      padding: 0.6rem 0;
+      margin-bottom: 2rem;
+    }
+    .marquee-track img {
+      height: 60px;
+      width: auto;
+      margin: 0 18px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.1);
+      padding: 4px 10px;
+      transition: 0.3s;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));
+    }
+    .marquee-track img:hover {
+      transform: scale(1.1);
+      background: rgba(255,255,255,0.3);
+    }
+    .skill-bar {
+      background: rgba(255,255,255,0.3);
+      border-radius: 40px;
+      padding: 0.2rem 0.2rem;
+    }
+    .skill-bar .form-range {
+      height: 8px;
+      background: rgba(0,0,0,0.08);
+      border-radius: 20px;
+    }
+    .skill-bar .form-range::-webkit-slider-thumb {
+      background: #3f3d9e;
+      box-shadow: 0 2px 8px rgba(63, 61, 158, 0.4);
+    }
+    .journey-item {
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: blur(4px);
+      border-radius: 24px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid #3f3d9e;
+      transition: 0.25s;
+    }
+    .journey-item:hover {
+      background: rgba(255,255,255,0.4);
+      transform: translateX(6px);
+    }
+    .contact-glass {
+      background: rgba(30, 30, 58, 0.3);
+      backdrop-filter: blur(8px);
+      border-radius: 60px;
+      padding: 1.2rem 2rem;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-submit {
+      background: #3f3d9e;
+      border: none;
+      padding: 0.6rem 2.2rem;
+      border-radius: 60px;
+      font-weight: 600;
+      transition: 0.25s;
+      color: white;
+    }
+    .btn-submit:hover {
+      background: #0b0c3a;
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(63, 61, 158, 0.4);
+    }
+    .offcanvas-glass {
+      background: rgba(30, 30, 58, 0.7);
+      backdrop-filter: blur(20px);
+      color: white;
+    }
+    .offcanvas-glass .offcanvas-header, .offcanvas-glass .offcanvas-body {
+      color: white;
+    }
+    .offcanvas-glass .btn-close {
+      filter: invert(1);
+    }
+    .resume-download {
+      background: rgba(255,255,255,0.15);
+      border-radius: 40px;
+      padding: 0.8rem 1.8rem;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .resume-download:hover {
+      background: rgba(255,255,255,0.25);
+      transform: scale(1.02);
+    }
+    /* responsive */
+    @media (max-width: 991px) {
+      .nav-links {
+        display: none;
+      }
+      .hamburger-btn {
+        display: inline-block;
+      }
+      .glass-header {
+        flex-wrap: nowrap;
+      }
+    }
+    @media (max-width: 576px) {
+      .glass-header {
+        padding: 0.4rem 1rem;
+        border-radius: 30px;
+      }
+      .brand {
+        font-size: 1.2rem;
+      }
+      .section-card {
+        padding: 1.2rem;
+      }
+      .profile-img {
+        max-height: 200px;
+      }
+      .journey-item {
+        padding: 0.8rem 1rem;
+      }
+      .contact-glass {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 0.6rem;
+        border-radius: 40px;
+        padding: 1rem 1.5rem;
+      }
+      .resume-download {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    @media (min-width: 992px) {
+      .nav-links {
+        display: flex !important;
+        align-items: center;
+      }
+      .hamburger-btn {
+        display: none !important;
+      }
+    }
+    /* animations */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeUp 0.7s cubic-bezier(0.2, 0.9, 0.3, 1) forwards;
+    }
+    .fade-up-d1 { animation-delay: 0.1s; }
+    .fade-up-d2 { animation-delay: 0.25s; }
+    .fade-up-d3 { animation-delay: 0.4s; }
+    .fade-up-d4 { animation-delay: 0.55s; }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .float-soft {
+      animation: floatSoft 6s ease-in-out infinite;
+    }
+    @keyframes floatSoft {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    .hover-lift {
+      transition: 0.25s;
+    }
+    .hover-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px -12px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
-<body class="container-fluid">
-     <header id="home">
-       <h3 class="text-primary">DEVELOPMENT</h3>
-       <nav class="fs-5">
-        <a href="#col" class="p-2">Home</a>
-        <a href="#about" class="p-2">About</a> 
-        <a href="#Works" class="p-2">Works</a>
-        <a href="#skills" class="p-2">Skills</a> 
-        <a href="#contact" class="p-2 text-danger">Contact</a>   
-       </nav>
-       <div>
-        <button data-bs-target="#offcanvas" data-bs-toggle="offcanvas" class="bi bi-justify fs-5"></button>
-       </div> 
-     </header>
-     <section>
-      <div id="showSkills">
-        <marquee scrollamount="15" behavior="scroll">
-          <img src="./images/html.webp" alt="#">
-          <img src="./images/css.png" alt="#">
-          <img src="./images/bootstrap.png" alt="#">
-          <img src="./images/js.webp" alt="#">
-          <img src="./images/react.png" alt="#">
-          <img src="./images/jquery.png" alt="#">
-          <img src="./images/node.png" alt="#">
-          <img src="./images/express.webp" alt="#">
-          <img src="./images/mongo.png" alt="#">
-          <img src="./images/mysql.png" alt="#">
+<body>
+  <div class="container-fluid px-2 px-lg-4">
+    <!-- HEADER -->
+    <header class="glass-header sticky-top" style="top: 8px; z-index: 1050;">
+      <span class="brand"><i class="bi bi-code-square me-1"></i>DEVELOPMENT</span>
+      <nav class="nav-links fs-6">
+        <a href="#homeSec">Home</a>
+        <a href="#aboutSec">About</a>
+        <a href="#workSec">Works</a>
+        <a href="#skillsSec">Skills</a>
+        <a href="#contactSec" class="text-danger">Contact</a>
+      </nav>
+      <button class="hamburger-btn" data-bs-target="#offcanvasNav" data-bs-toggle="offcanvas" aria-label="menu">
+        <i class="bi bi-justify"></i>
+      </button>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <!-- marquee / skills ticker -->
+      <div class="marquee-track overflow-hidden">
+        <marquee scrollamount="12" behavior="scroll" loop="-1">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%233f3d9e' rx='12'/%3E%3Ctext x='12' y='40' fill='white' font-size='24' font-weight='bold'%3EHTML%3C/text%3E%3C/svg%3E" alt="html">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%23264de4' rx='12'/%3E%3Ctext x='16' y='40' fill='white' font-size='24' font-weight='bold'%3ECSS%3C/text%3E%3C/svg%3E" alt="css">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%237952B3' rx='12'/%3E%3Ctext x='4' y='40' fill='white' font-size='22' font-weight='bold'%3EBS%3C/text%3E%3C/svg%3E" alt="bootstrap">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%23f7df1e' rx='12'/%3E%3Ctext x='14' y='40' fill='black' font-size='24' font-weight='bold'%3EJS%3C/text%3E%3C/svg%3E" alt="js">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%2361DAFB' rx='12'/%3E%3Ctext x='8' y='40' fill='black' font-size='22' font-weight='bold'%3EReact%3C/text%3E%3C/svg%3E" alt="react">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%230769AD' rx='12'/%3E%3Ctext x='8' y='40' fill='white' font-size='22' font-weight='bold'%3EjQuery%3C/text%3E%3C/svg%3E" alt="jquery">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%23339933' rx='12'/%3E%3Ctext x='10' y='40' fill='white' font-size='24' font-weight='bold'%3ENode%3C/text%3E%3C/svg%3E" alt="node">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%23000' rx='12'/%3E%3Ctext x='6' y='40' fill='white' font-size='20' font-weight='bold'%3EExpress%3C/text%3E%3C/svg%3E" alt="express">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%2347A248' rx='12'/%3E%3Ctext x='6' y='40' fill='white' font-size='22' font-weight='bold'%3EMongo%3C/text%3E%3C/svg%3E" alt="mongo">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Crect width='100' height='60' fill='%234479A1' rx='12'/%3E%3Ctext x='6' y='40' fill='white' font-size='22' font-weight='bold'%3EMySQL%3C/text%3E%3C/svg%3E" alt="mysql">
         </marquee>
       </div>
-        <div class="text-light" id="col">
-          <h1 class="text-dark">Web Developer</h1>
-          <h3>Hii,<br/> I am Prashant Kumar</h3>
-          <div class="text-light bg-danger rounded p-2 my-4 w-100" id="link">
-          <a href="https://www.linkedin.com/in/prashant-kumar-93532a238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="bi bi-linkedin text-light p-2 fs-5"></a>
-          <a href="https://www.instagram.com/prashant_gupta115/profilecard/?igsh=NHNwcHZ0cmEwY3M0" class="bi bi-instagram p-2 text-light f-5"></a>
-          <a href="https://github.c3om/Prashant-Gupta2" class="bi bi-github p-2 text-light fs-5"></a>
-          </div>  
-        </div>
-       
-          <div id="banner">
-             <img src="./images/4635743.jpg" class="rounded" alt="#" height="350px">       
-             <img src="./images/frame-37-1.webp" class="rounded" alt="#"  height="350px">       
-          </div>
 
-        <div id="about">
-          <div>
-            <h3 class="text-primary text-center">About Me</h3>
-          <p class="fs-5">
-           Hii, I am Prashant kumar
-           from india I have completed my graduation with a BSC in Information Technology.
-            and i am focuing on learning front-end technologies such as HTML,CSS,Javascript and React.
-             I am passionate about building intuative and resposive user interface,
-              and i am egar to establish a successful career in the IT field.<br/>
-           Thank You!
-          </p>
-          <hr>
-          </div>
-        </div>
-        <div class="resume-sec">
-          <form action="https://api.web3forms.com/submit" method="post">
-            <h3 class="text-center p-2 bg-danger text-dark rounded my-2">Contact Us</h3>
-  
-            <input type="hidden" name="access_key" value="31d35a21-701d-4807-b88c-66ffcd87f412">
-            <dl>
-              <dt>Name:</dt>
-              <dd><input type="text" placeholder="Name" name="name" class="form-control" required /></dd>
-              <dt>Email:</dt>
-              <dd><input type="text" placeholder="Email" name="email" class="form-control" required/></dd>
-              <dt>Messages:</dt>
-              <dd><textarea aria-setsize="40" class="form-control" name="Address" required></textarea></dd>
-              <button class="btn btn-primary" type="submit">Submit</button>
-            </dl>
-          </form>
-          <div class="resume">
-           <h2>Download My Resume</h2>
-           <a href="./resume/PRASHANT KUMAR.pdf" download="resumeNew.pdf"><img src="./images/resume.jpg" width="200px" height="80px" style="mix-blend-mode: color-burn;"></a>
-          </div>
-        </div>
-        
-        <div id="journey">
-          <h3 class="text-center ">My Journey</h3>
-          <div class="eaducation">
-            <h4 class="text-dark">School: </h4>
-            <div>
-              <h4 class="text-success">Public High School Raniganj [2018]</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe neque deleniti ullam quod accusamus, odit reiciendis quis. Maxime quam quo officiis similique repellendus. Maiores quam necessitatibus totam velit delectus.</p>
-            </div>
-          </div>
-          <div class="eaducation">
-            <h4 class="text-dark">College: </h4>
-            <div>
-              <h4 class="text-success">S.M.S.G College Shergathi [2020]</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe neque deleniti ullam quod accusamus, odit reiciendis quis. Maxime quam quo officiis similique repellendus. Maiores quam necessitatibus totam velit delectus.</p>
-            </div>
-          </div>
-          <div class="eaducation">
-            <h4 class="text-dark">College: </h4>
-            <div>
-              <h4 class="text-success">Gaya College, Gaya [2023]</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe neque deleniti ullam quod accusamus, odit reiciendis quis. Maxime quam quo officiis similique repellendus. Maiores quam necessitatibus totam velit delectus.</p>
+      <!-- Hero row -->
+      <div id="homeSec" class="row g-4 align-items-center fade-up">
+        <div class="col-lg-6 fade-up-d1">
+          <div class="section-card">
+            <h1 class="display-5 fw-bold" style="color:#0b0c3a;">Web Developer</h1>
+            <h3 class="mt-2" style="color:#1e1e3a;">Hii, <br/> I am Prashant Kumar</h3>
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+              <a href="https://www.linkedin.com/in/prashant-kumar-93532a238" class="btn btn-dark rounded-pill px-4 py-2"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+              <a href="https://www.instagram.com/prashant_gupta115" class="btn btn-dark rounded-pill px-4 py-2"><i class="bi bi-instagram me-2"></i>Instagram</a>
+              <a href="#" class="btn btn-dark rounded-pill px-4 py-2"><i class="bi bi-github me-2"></i>GitHub</a>
             </div>
           </div>
         </div>
-         <div class="offcanvas offcanvas-end w-75" id="offcanvas" style="background-color: #9b5d6b;">
-           <div class="offcanvas-header">
-             <h3 class="text-light bg-danger p-2 rounded">PROFILE</h3>
-             <button class="btn btn-close btn-dark" data-bs-dismiss="offcanvas"></button>
-           </div>
-           <div class="offcanvas-body">
-            <nav class="fs-5 d-flex justify-content-between bg-dark p-2 rounded flex-column">
-              <a href="#home" class="p-2 text-light">Home</a>
-              <a href="#about" class="p-2 text-light">About</a> 
-              <a href="#" class="p-2 text-light">Works</a>
-              <a href="#skills" class="p-2 text-light">Skills</a> 
-              <a href="#contact" class="p-2 text-light">Contact</a>   
-             </nav>
-             <div class="my-4 text-center">
-              <h2 class="bg-secondary text-white p-2 w-100">Resume Download</h2>
-              <a href="./resume/PRASHANT KUMAR.pdf" download="resumeNew.pdf"><img src="./images/resume.jpg" width="200px" height="80px" style="mix-blend-mode: color-burn;"></a>
-             </div>
-           </div>
-         </div>
-         <h2 class="text-dark text-center">Professional Skills</h2>
-       <div id="skills">
-         
-        <div>
-          <span>HTML</span>
-          <input type="range" value="92" min="10" max="100" class="form-range">
-          <span>CSS</span>
-          <input type="range" value="90" class="form-range">
-          <span>Javscript</span>
-          <input type="range" value="85" class="form-range">
-          <span>React</span>
-          <input type="range" value="80" class="form-range">
+        <div class="col-lg-6 fade-up-d2">
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 280'%3E%3Crect width='300' height='280' fill='%239796f0' rx='28'/%3E%3Ctext x='40' y='140' fill='white' font-size='32' font-weight='bold'%3EPortrait%3C/text%3E%3C/svg%3E" class="profile-img" alt="profile banner" style="max-width:260px;">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 280'%3E%3Crect width='300' height='280' fill='%23fbc7d4' rx='28'/%3E%3Ctext x='30' y='140' fill='%231e1e3a' font-size='30' font-weight='bold'%3ECoding%3C/text%3E%3C/svg%3E" class="profile-img" alt="coding" style="max-width:260px;">
+          </div>
         </div>
-         <div class="right">
-          <span>Node Js</span>
-          <input type="range" value="70" class="form-range">
-          <span>Express Js</span>
-          <input type="range" value="70" class="form-range">
-          <span>Mongodb</span>
-          <input type="range" value="70" class="form-range">
-          <span>MySQL</span>
-          <input type="range" value="80" class="form-range">
-         </div>
-       </div>
+      </div>
 
-        <div id="Works" class="mt-4 p-4 rounded">
-          <h3 class="ms-5 text-dark text-uppercase text-decoration-underline text-center">Mini Projects (Works)</h3>
-          <span class="text-light fs-3  text-center">Bubble Game  <a href="https://prashant-gupta2.github.io/Bubble_game/">Link |</a></span>
-         <span class="text-light fs-3 text-center">Money Management  <a href="#">Link |</a></span>
-         <span class="text-light fs-3 text-center">ToDO List App <a href="https://prashant-gupta2.github.io/ToDo-App/">Link |</a></span>
+      <!-- About -->
+      <div id="aboutSec" class="section-card fade-up-d3">
+        <h3 class="fw-bold" style="color:#0b0c3a;"><i class="bi bi-person-circle me-2"></i>About Me</h3>
+        <p class="fs-5" style="max-width:900px;">Hii, I am Prashant Kumar from India. I have completed my graduation with a BSC in Information Technology. I focus on front-end technologies such as HTML, CSS, JavaScript, and React. I'm passionate about building intuitive and responsive user interfaces, and I am eager to establish a successful career in the IT field.</p>
+        <hr class="w-25" style="border:2px solid #3f3d9e; opacity:0.4;">
+        <div class="resume-download d-flex align-items-center justify-content-between flex-wrap">
+          <span class="fw-bold fs-5"><i class="bi bi-file-pdf me-2"></i>Download My Resume</span>
+          <a href="#" download class="btn btn-outline-dark rounded-pill px-4 py-2"><i class="bi bi-download me-2"></i>Resume.pdf</a>
         </div>
-        
-         <div id="contact">
-          <h2 class="text-dark"> Contact: </h2>
-          <div class="bi bi-envelope-at text-light"> <span class="text-warning"> Email: </span> prashantkumar08102002@gmail.com </div>
-          <div class="bi bi-telephone text-light"> <span class="text-warning"> Phone: </span> +91 8877596632</div>
-         </div>
-     </section>
+      </div>
+
+      <!-- Journey + Form row -->
+      <div class="row g-4 fade-up-d4">
+        <div class="col-lg-7">
+          <div class="section-card" id="journeySec">
+            <h3 class="fw-bold" style="color:#0b0c3a;"><i class="bi bi-clock-history me-2"></i>My Journey</h3>
+            <div class="journey-item">
+              <h5 class="fw-bold">Public High School Raniganj <span class="badge bg-dark">2018</span></h5>
+              <p class="mb-0">Foundation of science & mathematics.</p>
+            </div>
+            <div class="journey-item">
+              <h5 class="fw-bold">S.M.S.G College Shergathi <span class="badge bg-dark">2020</span></h5>
+              <p class="mb-0">Intermediate with computer science.</p>
+            </div>
+            <div class="journey-item">
+              <h5 class="fw-bold">Gaya College, Gaya <span class="badge bg-dark">2023</span></h5>
+              <p class="mb-0">B.Sc in Information Technology.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="section-card">
+            <h4 class="fw-bold" style="color:#0b0c3a;"><i class="bi bi-envelope-paper me-2"></i>Contact</h4>
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input type="hidden" name="access_key" value="31d35a21-701d-4807-b88c-66ffcd87f412">
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Name</label>
+                <input type="text" name="name" class="form-control rounded-pill" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Email</label>
+                <input type="email" name="email" class="form-control rounded-pill" placeholder="email@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Message</label>
+                <textarea name="message" rows="2" class="form-control rounded-4" placeholder="Write something..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit w-100"><i class="bi bi-send me-2"></i>Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div id="skillsSec" class="section-card">
+        <h3 class="fw-bold" style="color:#0b0c3a;"><i class="bi bi-bar-chart-steps me-2"></i>Professional Skills</h3>
+        <div class="row g-4">
+          <div class="col-md-6 skill-bar">
+            <div class="d-flex justify-content-between"><span>HTML</span><span>92%</span></div>
+            <input type="range" value="92" min="0" max="100" class="form-range" disabled>
+            <div class="d-flex justify-content-between"><span>CSS</span><span>90%</span></div>
+            <input type="range" value="90" min="0" max="100" class="form-range" disabled>
+            <div class="d-flex justify-content-between"><span>JavaScript</span><span>85%</span></div>
+            <input type="range" value="85" min="0" max="100" class="form-range" disabled>
+            <div class="d-flex justify-content-between"><span>React</span><span>80%</span></div>
+            <input type="range" value="80" min="0" max="100" class="form-range" disabled>
+          </div>
+          <div class="col-md-6 skill-bar">
+            <div class="d-flex justify-content-between"><span>Node.js</span><span>70%</span></div>
+            <input type="range" value="70" min="0" max="100" class="form-range" disabled>
+            <div class="d-flex justify-content-between"><span>Express</span><span>70%</span></div>
+            <input type="range" value="70" min="0" max="100" class="form-range" disabled>
+            <div class="d-flex justify-content-between"><span>MongoDB</span><span>70%</span></div>
+            <input type="range" value="70" min="0" max="100" class="form-range" disabled>
+            <div class="d-flex justify-content-between"><span>MySQL</span><span>80%</span></div>
+            <input type="range" value="80" min="0" max="100" class="form-range" disabled>
+          </div>
+        </div>
+      </div>
+
+      <!-- Works -->
+      <div id="workSec" class="section-card text-center">
+        <h3 class="fw-bold" style="color:#0b0c3a;"><i class="bi bi-briefcase me-2"></i>Mini Projects</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-4 fs-5">
+          <span class="badge bg-dark bg-opacity-25 p-3 rounded-pill"><i class="bi bi-bubble-chart me-2"></i>Bubble Game <a href="#" class="text-dark fw-bold">Link</a></span>
+          <span class="badge bg-dark bg-opacity-25 p-3 rounded-pill"><i class="bi bi-wallet2 me-2"></i>Money Management <a href="#" class="text-dark fw-bold">Link</a></span>
+          <span class="badge bg-dark bg-opacity-25 p-3 rounded-pill"><i class="bi bi-check2-square me-2"></i>ToDo App <a href="#" class="text-dark fw-bold">Link</a></span>
+        </div>
+      </div>
+
+      <!-- Contact footer -->
+      <div id="contactSec" class="contact-glass d-flex flex-wrap align-items-center justify-content-between">
+        <div><i class="bi bi-envelope-at me-2"></i> <span class="fw-light">prashantkumar08102002@gmail.com</span></div>
+        <div><i class="bi bi-telephone me-2"></i> <span class="fw-light">+91 8877596632</span></div>
+        <div><span class="badge bg-light text-dark p-2">© 2026</span></div>
+      </div>
+    </main>
+
+    <!-- Offcanvas (mobile) -->
+    <div class="offcanvas offcanvas-end offcanvas-glass" tabindex="-1" id="offcanvasNav">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold"><i class="bi bi-person-circle me-2"></i>Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="d-flex flex-column gap-3 fs-5">
+          <a href="#homeSec" class="text-light text-decoration-none p-2 rounded bg-white bg-opacity-10">Home</a>
+          <a href="#aboutSec" class="text-light text-decoration-none p-2 rounded bg-white bg-opacity-10">About</a>
+          <a href="#workSec" class="text-light text-decoration-none p-2 rounded bg-white bg-opacity-10">Works</a>
+          <a href="#skillsSec" class="text-light text-decoration-none p-2 rounded bg-white bg-opacity-10">Skills</a>
+          <a href="#contactSec" class="text-light text-decoration-none p-2 rounded bg-white bg-opacity-10">Contact</a>
+        </nav>
+        <hr class="bg-light">
+        <div class="resume-download text-center p-3">
+          <span class="fw-light">Download Resume</span>
+          <a href="./resume/PRASHANT KUMAR.pdf" class="btn btn-light rounded-pill px-4 d-block mt-2"><i class="bi bi-file-pdf me-2"></i>PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (bundle already loaded) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
